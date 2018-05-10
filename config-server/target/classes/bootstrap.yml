@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    stream:
+      default-binder: rabbit
+    inetutils:
+      ignored-interfaces: eth0
+      
+management:
+  security:
+    enabled: false

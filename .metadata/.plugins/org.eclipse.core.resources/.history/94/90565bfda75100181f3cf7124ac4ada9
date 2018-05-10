@@ -1,0 +1,27 @@
+server:
+  port: 19007
+  
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: 
+          search-paths:
+          username: 
+          password: 
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: 
+    password: 
+        
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:19008/eureka/  
+          
+  

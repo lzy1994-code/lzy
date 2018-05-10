@@ -1,0 +1,10 @@
+package org.user.api;
+
+/**
+ * @author zhongyuan Li
+ * @date   2018年5月8日
+ * @deprecated
+ */
+public class demo {
+
+}

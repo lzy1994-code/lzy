@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="zuul-server"/>
+<aop-project name="config-server"/>
+<aop-project name="eureka-server"/>
+<aop-project name="user-core"/>
+<aop-project name="trubine-server"/>
+<aop-project name="zipkin-server"/>
+<aop-project name="user-api"/>
+</aop-reference-model>

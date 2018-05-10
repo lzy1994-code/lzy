@@ -1,0 +1,34 @@
+server: 
+  port: 19007
+  
+spring:
+#  profiles: turbine_one
+  application: 
+    name: turbine-server
+    
+eureka: 
+  client:
+#  集群配置
+#    region: region1
+#    availability-zones: 
+#      region1: migu_eureka
+#    service-url: 
+#      migu_eureka: http://47.95.113.117:19091/eureka/,http://47.95.113.117:19090/eureka/,http://47.95.113.117:19092/eureka/
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+#    ip-address: 47.95.113.117
+    prefer-Ipaddress: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    
+    
+turbine:
+  app-config: mg-user-core, mg-sop
+#  app-config: MIGUINTERFACE,MIGUDEMOCORE,MIGU_ZUUL,SPRING_CLOUD_EUREKA   ##需要监控的服务名
+#  aggregator: 
+#    clusterConfig: main ##需要监控的服务集群名
+  aggregator:
+    clusterConfig: jiqun1
+  cluster-name-expression: new String("jiqun1")
+  combine-host-port: true

@@ -1,0 +1,13 @@
+package lzy.config_server;
+
+/**
+ * Hello world!
+ *
+ */
+public class ConfigStart 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+}

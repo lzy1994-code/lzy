@@ -1,0 +1,13 @@
+package lzy.eureka_server;
+
+/**
+ * Hello world!
+ *
+ */
+public class EurekaStart 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+}

@@ -1,0 +1,9 @@
+package org.user.api;
+
+/**
+ * Hello world!
+ *
+ */
+public class User {
+   
+}
